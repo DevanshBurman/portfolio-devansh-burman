@@ -1084,6 +1084,24 @@ html[data-theme="light"] .resume-linkedin-button:hover { background: rgba(0,0,0,
   .tilt-card { transform:none !important; }
 }
 
-/* Clean up unused CSS variables */
+/* --- Final Hardware Optimizations & Physics --- */
+.reveal, .project-card, .cert-card, .stat-card, .timeline-item {
+  will-change: transform, opacity;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
 
-/* Update breakpoint logic */
+.project-card:hover {
+  transform: translateY(-6px) scale(1.005);
+  box-shadow: 0 40px 100px rgba(37,74,58,.18), 0 10px 30px rgba(47,111,94,.08);
+}
+
+.cert-card:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 30px 80px rgba(37,74,58,.15), 0 8px 25px rgba(47,111,94,.06);
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 90px rgba(37,74,58,.16), 0 10px 30px rgba(47,111,94,.08);
+}
