@@ -7,3 +7,5 @@ const SOCIAL_LINKS = {
 };
 
 // Ensure links are loaded securely
+
+// End of socials config
