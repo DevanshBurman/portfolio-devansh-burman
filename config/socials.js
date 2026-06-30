@@ -5,3 +5,5 @@ const SOCIAL_LINKS = {
   email: "devansh.burman16@gmail.com",
   resume: "" // Can be filled later
 };
+
+// Ensure links are loaded securely
