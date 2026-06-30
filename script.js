@@ -690,3 +690,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Optimize animation frame handling
+
+// Minor performance tweaks
