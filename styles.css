@@ -1083,3 +1083,5 @@ html[data-theme="light"] .resume-linkedin-button:hover { background: rgba(0,0,0,
   .reveal { filter:none; transform:none; }
   .tilt-card { transform:none !important; }
 }
+
+/* Clean up unused CSS variables */
