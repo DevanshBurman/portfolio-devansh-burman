@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#faf9f5"/>
+  <path d="M0 0H1200V630H0z" fill="url(#grid)"/>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#2f6f5e" stroke-opacity=".06"/></pattern>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfeae3"/><stop offset="1" stop-color="#afc9bb"/></linearGradient>
+  </defs>
+  <circle cx="1030" cy="90" r="280" fill="#e8f0ea"/>
+  <rect x="78" y="70" width="54" height="54" rx="8" fill="#193d34"/>
+  <text x="105" y="104" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">DB</text>
+  <text x="78" y="232" fill="#14201c" font-family="Arial,sans-serif" font-size="66" font-weight="700">Devansh Burman</text>
+  <text x="78" y="305" fill="#2f6f5e" font-family="Georgia,serif" font-size="53" font-style="italic">Software Engineer</text>
+  <text x="78" y="374" fill="#5f6d67" font-family="Arial,sans-serif" font-size="25">AI &amp; Machine Learning · Backend · Full Stack · Cloud</text>
+  <rect x="78" y="438" width="495" height="60" rx="7" fill="#193d34"/>
+  <text x="105" y="476" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Building production-ready software.</text>
+  <rect x="850" y="165" width="250" height="340" rx="125" fill="url(#card)"/>
+  <text x="975" y="350" text-anchor="middle" fill="#2f6f5e" font-family="Arial,sans-serif" font-size="76" font-weight="700">DB</text>
+</svg>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Devansh Burman, a computer science student and aspiring software engineer.">
+  <meta name="theme-color" content="#faf9f5">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Devansh Burman — Software Engineer">
+  <meta property="og:description" content="Software engineering, AI/ML, backend, full-stack, and cloud projects by Devansh Burman.">
+  <meta property="og:image" content="og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Devansh Burman — Software Engineer">
+  <meta name="twitter:description" content="Engineering scalable software and intelligent systems.">
+  <meta name="twitter:image" content="og-image.svg">
+  <script>
+    try {
+      const requested = new URLSearchParams(location.search).get('theme');
+      const theme = localStorage.getItem('portfolio-theme');
+      if (requested === 'dark' || (!requested && (theme === 'dark' || (!theme && matchMedia('(prefers-color-scheme: dark)').matches)))) document.documentElement.dataset.theme = 'dark';
+      if (requested === 'light') document.documentElement.dataset.theme = 'light';
+    } catch {}
+  </script>
+  <link rel="canonical" href="./">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Devansh Burman — Software Engineer | AI & ML</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config/socials.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="loading-screen" aria-hidden="true"><span>DB</span></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="dark-spotlight" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="bg-mesh-blob"></div>
+    <div class="bg-mesh-blob secondary"></div>
+  </div>
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Devansh Burman home">
+      <span>DB</span>
+      <span class="logo-name">Devansh Burman</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#hackathons">Hackathons</a>
+      <a href="#certifications">Credentials</a>
+      <a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+      <a href="#" data-social="linkedin" class="nav-social" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+      </a>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle color theme"><span>☼</span></button>
+    </nav>
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="aurora-wrapper" aria-hidden="true"><div class="aurora"></div></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> Open to software engineering & AI/ML internships</div>
+        <h1 class="reveal" data-animate="hero-heading">
+          <span class="word">Building</span> <span class="word">production-ready</span> <span class="word">software</span> <span class="word">with</span> <span class="word shimmer-text"><em>AI</em></span> <span class="word"><em>and</em></span> <span class="word"><em>engineering.</em></span>
+        </h1>
+        <p class="professional-title">Computer Science — AI & Machine Learning <span>·</span> Acropolis Institute of Technology <span>·</span> IIT Madras BS Student</p>
+        <p class="hero-intro">Software Engineer specializing in backend development, full-stack systems, machine learning, and cloud computing. I turn real problems into secure, scalable applications—and I’m open to internship opportunities.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="button button-primary">Explore my work <span>↓</span></a>
+          <a href="#contact" class="button button-secondary">Contact me</a>
+        </div>
+        <div class="hero-proof" aria-label="Portfolio focus areas">
+          <span>Backend APIs</span>
+          <span>ML Workflows</span>
+          <span>Cloud Foundations</span>
+          <span>Team Delivery</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="profile-card tilt-card">
+          <div class="profile-top">
+            <div class="profile-avatar" role="img" aria-label="Profile photo of Devansh Burman">
+              <img src="profile-photo.jpg" alt="Devansh Burman">
+            </div>
+            <div class="profile-identity">
+              <span>Software Engineer</span>
+              <h2>Devansh Burman</h2>
+              <p>AI & Machine Learning</p>
+            </div>
+          </div>
+          <div class="profile-disciplines">
+            <span>Backend Development</span>
+            <span>Full Stack</span>
+            <span>Cloud Computing</span>
+          </div>
+          <div class="profile-details-grid">
+            <div class="detail-item">
+              <span>CGPA</span>
+              <strong>8.14</strong>
+            </div>
+            <div class="detail-item">
+              <span>Location</span>
+              <strong>Indore, India</strong>
+            </div>
+            <div class="detail-item">
+              <span>Target role</span>
+              <strong>Data Science engineer</strong>
+            </div>
+          </div>
+          <div class="profile-status">
+            <span class="status-dot"></span> Open to internship opportunities
+          </div>
+        </div>
+      </div>
+      <div class="hero-footer">
+        <span>SCROLL TO DISCOVER</span>
+        <span class="scroll-line"></span>
+        <div class="social-links">
+          <a href="#" data-social="linkedin" class="hero-social-button">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            Connect on LinkedIn
+          </a>
+          <a href="#" data-social="github" class="hero-social-button">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-label reveal"><span>01</span> About me</div>
+      <div class="about-grid" data-animate="fade-left">
+        <h2 class="section-heading reveal">Building software with<br><em>purpose and depth.</em></h2>
+        <div class="about-copy reveal">
+          <p>I am a Computer Science (AI & ML) student focused on software engineering, backend development, and intelligent systems. I enjoy designing reliable APIs, structuring data-driven applications, and applying machine learning to practical challenges.</p>
+          <p>My portfolio includes a role-based Placement Portal, Learnix AI, an IoT Patient Monitoring System, a Diabetes Prediction pipeline, and a Hospital Management System. Across them, I have designed REST APIs, authentication flows, relational data models, and machine-learning workflows.</p>
+          <p>Alongside my B.Tech, I pursue the IIT Madras BS in Data Science and Applications and continuously deepen my skills in cloud computing, scalable systems, and modern application development.</p>
+          <div class="about-actions">
+            <a href="https://cdn.imageurlgenerator.com/uploads/c033f1c5-83b8-49d8-a202-3fcfc9a3c8b8.pdf" target="_blank" rel="noopener noreferrer" class="text-link">Download résumé <span>↗</span></a>
+            <a href="#" data-social="linkedin" class="text-link">View LinkedIn Profile <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="strength-grid reveal" aria-label="Engineering strengths">
+        <article><span>01</span><h3>Systems Thinking</h3><p>I break products into roles, data models, API boundaries, and workflows before implementation.</p></article>
+        <article><span>02</span><h3>Backend Discipline</h3><p>Authentication, authorization, database design, REST endpoints, and maintainable Flask services.</p></article>
+        <article><span>03</span><h3>AI Application Mindset</h3><p>Machine learning is presented as useful product behavior, not just model experimentation.</p></article>
+        <article><span>04</span><h3>Professional Delivery</h3><p>Clear documentation, case-study thinking, presentation quality, and steady technical growth.</p></article>
+      </div>
+      <div class="stats-grid reveal">
+        <div class="stat"><strong data-count="8.14" data-decimals="2">0</strong><span>Current B.Tech CGPA</span></div>
+        <div class="stat"><strong data-count="5" data-suffix="+">0</strong><span>Major projects</span></div>
+        <div class="stat"><strong data-count="7" data-suffix="+">0</strong><span>Programming languages</span></div>
+        <div class="stat"><strong data-count="15" data-suffix="+">0</strong><span>REST APIs built</span></div>
+        <div class="stat"><strong data-count="4" data-suffix="+">0</strong><span>ML models explored</span></div>
+        <div class="stat"><strong data-count="2">0</strong><span>Parallel degrees</span></div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-label reveal"><span>02</span> Education & academic journey</div>
+      <div class="timeline reveal">
+        <article class="timeline-item tilt-card reveal" data-animate="slide-up">
+          <div class="timeline-date">CURRENT</div>
+          <div><h3>B.Tech, Computer Science Engineering</h3><p class="organization">Artificial Intelligence & Machine Learning<br>Acropolis Institute of Technology and Research</p></div>
+          <p>Current CGPA: 8.14. Coursework includes Data Structures and Algorithms, OOP, DBMS, Operating Systems, Machine Learning, C++, Python, Java and Software Engineering.</p>
+          <span class="item-number">01</span>
+        </article>
+        <article class="timeline-item tilt-card reveal" data-animate="slide-up">
+          <div class="timeline-date">CURRENT · ONLINE</div>
+          <div><h3>BS in Data Science and Applications</h3><p class="organization">IIT Madras</p></div>
+          <p>Parallel online degree strengthening knowledge in Python, Statistics, Mathematics, Data Science, Machine Learning and Modern Application Development.</p>
+          <span class="item-number">02</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="projects-heading-row">
+        <div>
+          <div class="section-label reveal"><span>03</span> Selected work</div>
+          <h2 class="section-heading reveal">Academic projects<br><em>built end to end.</em></h2>
+        </div>
+        <p class="projects-intro reveal">Full-stack systems and machine learning applications built to explore secure architecture, predictive modeling, and practical problem solving.</p>
+      </div>
+      <div class="project-toolbar reveal" aria-label="Filter projects by category">
+        <button type="button" class="project-filter active" data-filter="all">All</button>
+        <button type="button" class="project-filter" data-filter="backend">Backend</button>
+        <button type="button" class="project-filter" data-filter="ai">AI / ML</button>
+        <button type="button" class="project-filter" data-filter="healthcare">Healthcare</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card featured tilt-card reveal" data-category="backend">
+          <div class="project-visual finance-visual">
+            <div class="mock-window">
+              <div class="mock-sidebar"><b>place.</b><span>Students</span><span>Companies</span><span>Applications</span></div>
+              <div class="mock-content"><small>PLACEMENT OVERVIEW</small><strong>Admin Dashboard</strong><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-index">01</span><h3>Placement Portal Application</h3></div>
+            <div class="project-meta"><span>Role-based system</span><span>15+ REST APIs</span><span>Secure workflows</span></div>
+            <p>A complete college recruitment platform for students, companies, and administrators. Includes registrations, admin approvals, placement drives, résumé upload and viewing, applications, role-specific dashboards, and REST APIs. Implemented the complete backend architecture with secure authentication and role-based authorization.</p>
+            <div class="tags"><span>Flask</span><span>Vue.js</span><span>SQLite</span><span>SQLAlchemy</span><span>Bootstrap</span><span>REST API</span><span>Git</span></div>
+            <a href="#" aria-label="View Placement Portal repository on GitHub" class="project-arrow" title="GitHub repository">GitHub ↗</a>
+            <details class="case-study">
+              <summary>Explore case study <span>+</span></summary>
+              <div class="case-study-content">
+                <div class="case-copy"><h4>Problem</h4><p>College recruitment workflows are fragmented across spreadsheets, email, and disconnected records.</p></div>
+                <div class="case-copy"><h4>Solution</h4><p>A unified, role-based platform connecting administrators, companies, and students through secure workflows.</p></div>
+                <div class="case-copy"><h4>Engineering</h4><p>Designed authentication, authorization, résumé handling, approval workflows, dashboards, and 15+ REST endpoints.</p></div>
+                <div class="case-copy"><h4>Outcome</h4><p>Strengthened backend architecture, API design, relational modeling, and multi-role product thinking.</p></div>
+                <div class="architecture" aria-label="Placement Portal architecture"><span>Vue.js</span><b>→</b><span>REST API</span><b>→</b><span>Flask</span><b>→</b><span>SQLAlchemy</span><b>→</b><span>SQLite</span></div>
+                <div class="case-actions"><a href="#" data-social="linkedin" class="project-social-link">Connect ↗</a><a href="#">GitHub ↗</a><button type="button" disabled>Live demo — soon</button><button type="button" class="docs-button">Documentation</button></div>
+              </div>
+            </details>
+          </div>
+        </article>
+        <article class="project-card tilt-card reveal" data-category="ai backend">
+          <div class="project-visual study-visual">
+            <div class="phone-mock"><div class="phone-head">Learnix AI Assistant</div><strong>How can I help?</strong><div class="progress-ring">AI</div><div class="mini-task"></div><div class="mini-task short"></div></div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-index">02</span><h3>Learnix AI Chatbot</h3></div>
+            <div class="project-meta"><span>Education assistant</span><span>Multi-mode UX</span><span>Flask app</span></div>
+            <p>An educational chatbot with multiple assistant modes for programming, mathematics, résumé guidance, placement preparation, interviews, and career support—all presented through a modern, subject-oriented interface.</p>
+            <div class="tags"><span>Python</span><span>Flask</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+            <a href="#" aria-label="View Learnix AI repository on GitHub" class="project-arrow" title="GitHub repository">GitHub ↗</a>
+            <details class="case-study">
+              <summary>Explore case study <span>+</span></summary>
+              <div class="case-study-content">
+                <div class="case-copy"><h4>Problem</h4><p>Students often switch between disconnected tools for coding, mathematics, careers, and interview preparation.</p></div>
+                <div class="case-copy"><h4>Solution</h4><p>A multi-mode educational assistant that routes learners to focused, domain-specific guidance.</p></div>
+                <div class="case-copy"><h4>Features</h4><p>Subject modes, coding assistance, résumé guidance, placement preparation, and career-oriented conversations.</p></div>
+                <div class="case-copy"><h4>Learning</h4><p>Improved conversational UX, Flask integration, frontend state handling, and responsible assistant design.</p></div>
+                <div class="architecture" aria-label="Learnix architecture"><span>Web UI</span><b>→</b><span>JavaScript</span><b>→</b><span>Flask</span><b>→</b><span>Assistant Modes</span></div>
+                <div class="case-actions"><a href="#" data-social="linkedin" class="project-social-link">Connect ↗</a><a href="#">GitHub ↗</a><button type="button" disabled>Live demo — soon</button><button type="button" class="docs-button">Documentation</button></div>
+              </div>
+            </details>
+          </div>
+        </article>
+        <article class="project-card tilt-card reveal" data-category="ai healthcare">
+          <div class="project-visual weather-visual health-visual">
+            <div class="weather-card"><span>Patient monitoring</span><strong>98</strong><small>Early warning analysis</small><div class="weather-days"><i>HEART<br>72</i><i>SpO₂<br>98%</i><i>RISK<br>LOW</i></div></div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-index">03</span><h3>Smart IoT Patient Monitoring</h3></div>
+            <div class="project-meta"><span>AI healthcare</span><span>IoT concept</span><span>AWS cloud</span></div>
+            <p>An AI-assisted healthcare system for real-time monitoring and early prediction of patient deterioration. Developed as an innovative healthcare solution and presented during technical evaluation, combining predictive analytics, cloud integration, and IoT architecture.</p>
+            <div class="tags"><span>Machine Learning</span><span>Python</span><span>IoT</span><span>AWS</span><span>Cloud</span></div>
+            <a href="#" aria-label="View patient monitoring repository on GitHub" class="project-arrow" title="GitHub repository">GitHub ↗</a>
+            <details class="case-study">
+              <summary>Explore case study <span>+</span></summary>
+              <div class="case-study-content">
+                <div class="case-copy"><h4>Problem</h4><p>Threshold-only monitoring can identify danger too late to support proactive clinical response.</p></div>
+                <div class="case-copy"><h4>Solution</h4><p>An IoT and ML concept that evaluates live health signals to surface deterioration risk earlier.</p></div>
+                <div class="case-copy"><h4>Architecture</h4><p>Connected sensor inputs, prediction logic, AWS cloud services, and an interpretable monitoring dashboard.</p></div>
+                <div class="case-copy"><h4>Learning</h4><p>Explored time-sensitive data, cloud integration, predictive healthcare, and safety-aware system design.</p></div>
+                <div class="architecture" aria-label="Patient monitoring architecture"><span>Sensors</span><b>→</b><span>Prediction Model</span><b>→</b><span>AWS Cloud</span><b>→</b><span>Dashboard</span></div>
+                <div class="case-actions"><a href="#" data-social="linkedin" class="project-social-link">Connect ↗</a><a href="#">GitHub ↗</a><button type="button" disabled>Live demo — soon</button><button type="button" class="docs-button">Documentation</button></div>
+              </div>
+            </details>
+          </div>
+        </article>
+        <article class="project-card tilt-card reveal" data-category="ai healthcare">
+          <div class="project-visual model-visual">
+            <div class="model-panel"><small>MODEL EVALUATION</small><strong>Diabetes Prediction</strong><div class="model-score"><span>Models compared</span><b>04</b></div><div class="model-lines"><i></i><i></i><i></i><i></i></div></div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-index">04</span><h3>Diabetes Prediction using ML</h3></div>
+            <div class="project-meta"><span>Classification</span><span>4 models</span><span>Evaluation pipeline</span></div>
+            <p>A healthcare classification pipeline that preprocesses patient data, compares Logistic Regression, Decision Tree, Random Forest, and SVM models, evaluates accuracy, and generates predictions.</p>
+            <div class="tags"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Classification</span></div>
+            <a href="#" aria-label="View diabetes prediction repository on GitHub" class="project-arrow" title="GitHub repository">GitHub ↗</a>
+            <details class="case-study">
+              <summary>Explore case study <span>+</span></summary>
+              <div class="case-study-content">
+                <div class="case-copy"><h4>Problem</h4><p>Healthcare indicators require careful preprocessing and model comparison before useful predictions can be made.</p></div>
+                <div class="case-copy"><h4>Solution</h4><p>A reproducible classification pipeline comparing four algorithms on structured patient data.</p></div>
+                <div class="case-copy"><h4>Models</h4><p>Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine.</p></div>
+                <div class="case-copy"><h4>Learning</h4><p>Built stronger intuition for preprocessing, evaluation, comparison, and responsible interpretation.</p></div>
+                <div class="architecture" aria-label="Diabetes prediction architecture"><span>Dataset</span><b>→</b><span>Preprocessing</span><b>→</b><span>4 Models</span><b>→</b><span>Evaluation</span></div>
+                <div class="case-actions"><a href="#" data-social="linkedin" class="project-social-link">Connect ↗</a><a href="#">GitHub ↗</a><button type="button" disabled>Live demo — soon</button><button type="button" class="docs-button">Documentation</button></div>
+              </div>
+            </details>
+          </div>
+        </article>
+        <article class="project-card tilt-card reveal" data-category="backend healthcare">
+          <div class="project-visual hospital-visual">
+            <div class="hospital-panel"><span>Hospital System</span><strong>Appointments</strong><div><i></i><p>Patient records</p></div><div><i></i><p>Doctors & departments</p></div><div><i></i><p>Treatments</p></div></div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-index">05</span><h3>Hospital Management System</h3></div>
+            <div class="project-meta"><span>CRUD system</span><span>Relational data</span><span>Flask auth</span></div>
+            <p>A Flask web application for appointment management, patient records, doctors, departments, treatments, and authenticated access, backed by a structured relational database.</p>
+            <div class="tags"><span>Flask</span><span>SQLAlchemy</span><span>SQLite</span><span>Authentication</span></div>
+            <a href="#" aria-label="View hospital management repository on GitHub" class="project-arrow" title="GitHub repository">GitHub ↗</a>
+            <details class="case-study">
+              <summary>Explore case study <span>+</span></summary>
+              <div class="case-study-content">
+                <div class="case-copy"><h4>Problem</h4><p>Patient, doctor, appointment, department, and treatment records need a consistent source of truth.</p></div>
+                <div class="case-copy"><h4>Solution</h4><p>A secure Flask application that organizes core hospital operations around a relational data model.</p></div>
+                <div class="case-copy"><h4>Features</h4><p>Authentication, appointments, patient records, doctors, departments, and treatment management.</p></div>
+                <div class="case-copy"><h4>Learning</h4><p>Applied CRUD design, database relationships, session handling, and server-rendered application structure.</p></div>
+                <div class="architecture" aria-label="Hospital system architecture"><span>Web Client</span><b>→</b><span>Flask</span><b>→</b><span>SQLAlchemy</span><b>→</b><span>SQLite</span></div>
+                <div class="case-actions"><a href="#" data-social="linkedin" class="project-social-link">Connect ↗</a><a href="#">GitHub ↗</a><button type="button" disabled>Live demo — soon</button><button type="button" class="docs-button">Documentation</button></div>
+              </div>
+            </details>
+          </div>
+        </article>
+        <article class="project-card tilt-card reveal" data-category="full-stack e-commerce">
+          <div class="project-visual hospital-visual">
+            <div class="hospital-panel"><span>E-Pharmacy Store</span><strong>Medicine Delivery</strong><div><i></i><p>User accounts</p></div><div><i></i><p>Products & cart</p></div><div><i></i><p>Order processing</p></div></div>
+          </div>
+          <div class="project-info">
+            <div><span class="project-index">06</span><h3>E-Pharmacy Store</h3></div>
+            <div class="project-meta"><span>E-Commerce</span><span>Full Stack</span><span>Web App</span></div>
+            <p>A full-stack e-pharmacy web application designed for online medicine browsing, cart management, and secure checkout, focusing on an intuitive user shopping experience.</p>
+            <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+            <a href="#" aria-label="View e-pharmacy store repository on GitHub" class="project-arrow" title="GitHub repository">GitHub ↗</a>
+            <details class="case-study">
+              <summary>Explore case study <span>+</span></summary>
+              <div class="case-study-content">
+                <div class="case-copy"><h4>Problem</h4><p>Purchasing medicines online requires a secure, trustworthy, and easy-to-navigate platform.</p></div>
+                <div class="case-copy"><h4>Solution</h4><p>An e-commerce architecture tailored for pharmaceutical products with cart and checkout workflows.</p></div>
+                <div class="case-copy"><h4>Features</h4><p>Product catalog, user authentication, shopping cart state management, and order placement.</p></div>
+                <div class="case-copy"><h4>Learning</h4><p>Mastered full-stack state management, e-commerce backend design, and component-based UI.</p></div>
+                <div class="architecture" aria-label="E-Pharmacy architecture"><span>Frontend</span><b>→</b><span>REST API</span><b>→</b><span>Node/Express</span><b>→</b><span>Database</span></div>
+                <div class="case-actions"><a href="#" data-social="linkedin" class="project-social-link">Connect ↗</a><a href="#">GitHub ↗</a><button type="button" disabled>Live demo — soon</button><button type="button" class="docs-button">Documentation</button></div>
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills">
+      <div class="section-label reveal"><span>04</span> Skills & tools</div>
+      <div class="skills-layout">
+        <h2 class="section-heading reveal">My growing<br><em>toolkit.</em></h2>
+        <div class="skills-list reveal">
+          <details open><summary><span>Programming languages</span><b>7 technologies</b></summary><p>Python · Java · C++ · JavaScript · SQL · HTML · CSS</p></details>
+          <details><summary><span>Frameworks & APIs</span><b>5 technologies</b></summary><p>Flask · Vue.js · SQLAlchemy · Bootstrap · REST APIs</p></details>
+          <details><summary><span>Machine learning</span><b>8 capabilities</b></summary><p>Scikit-learn · Pandas · NumPy · Matplotlib · Perceptron · Classification · Data Preprocessing · Model Evaluation</p></details>
+          <details><summary><span>Database & cloud</span><b>6 technologies</b></summary><p>SQLite · MySQL · AWS · Cloud Computing · GitHub · CI/CD Fundamentals</p></details>
+          <details><summary><span>Backend engineering</span><b>Core foundations</b></summary><p>Object Oriented Programming · Data Structures · Software Engineering · Authentication · Role-Based Authorization · REST API Development</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience hackathons" id="hackathons">
+      <div class="section-label reveal"><span>05</span> Hackathons & competitions</div>
+      <div class="hackathon-stats" aria-label="Hackathon statistics">
+        <article class="hackathon-stat tilt-card reveal" data-animate="scale-fade">
+          <span class="stat-icon" aria-hidden="true">&#127942;</span>
+          <div><strong>Best Achievement</strong><p>Runner-up (2nd Place)</p></div>
+        </article>
+        <article class="hackathon-stat tilt-card reveal" data-animate="scale-fade">
+          <span class="stat-icon" aria-hidden="true">&#9889;</span>
+          <div><strong>Hackathons</strong><p><span data-count="8" data-suffix="+">0</span></p></div>
+        </article>
+        <article class="hackathon-stat tilt-card reveal" data-animate="scale-fade">
+          <span class="stat-icon" aria-hidden="true">&#127757;</span>
+          <div><strong>State-Level</strong><p><span data-count="2">0</span></p></div>
+        </article>
+        <article class="hackathon-stat tilt-card reveal" data-animate="scale-fade">
+          <span class="stat-icon" aria-hidden="true">&#128101;</span>
+          <div><strong>Team Projects</strong><p><span data-count="8" data-suffix="+">0</span></p></div>
+        </article>
+      </div>
+      <div class="timeline reveal">
+        <article class="timeline-item tilt-card reveal" data-animate="slide-up">
+          <div class="timeline-date">ACHIEVEMENT</div>
+          <div><h3>College Level Innovation Hackathon</h3><p class="organization">Runner-up (2nd Place)</p></div>
+          <p>Secured 2nd place by designing and developing an innovative software solution within a limited hackathon timeframe while collaborating with a multidisciplinary team.</p>
+          <span class="item-number">01</span>
+        </article>
+        <article class="timeline-item tilt-card reveal" data-animate="slide-up">
+          <div class="timeline-date">STATE LEVEL</div>
+          <div><h3>AWS Student Builder Group Hackathon</h3><p class="organization">Artificial Intelligence &bull; AWS Cloud &bull; Healthcare</p></div>
+          <p>Designed an AI-powered healthcare monitoring solution using AWS cloud technologies and machine learning to address real-world patient monitoring challenges.</p>
+          <span class="item-number">02</span>
+        </article>
+        <article class="timeline-item tilt-card reveal" data-animate="slide-up">
+          <div class="timeline-date">STATE LEVEL</div>
+          <div><h3>State Level Software Hackathon</h3><p class="organization">Team Participant</p></div>
+          <p>Collaborated on rapid software prototyping, backend development, API integration, and final project presentation under strict time constraints.</p>
+          <span class="item-number">03</span>
+        </article>
+        <article class="timeline-item tilt-card reveal" data-animate="slide-up">
+          <div class="timeline-date">COLLEGE LEVEL</div>
+          <div><h3>Multiple College Hackathons</h3><p class="organization">5+ Technical Competitions</p></div>
+          <p>Participated in more than five college-level hackathons focused on AI, Full Stack Development, Cloud Computing, Web Technologies and Problem Solving.</p>
+          <span class="item-number">04</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="focus-section" id="focus">
+      <div class="focus-inner">
+        <div class="section-label reveal"><span>06</span> Currently working on</div>
+        <div class="focus-grid">
+          <div class="focus-heading reveal"><p>Current focus</p><h2>What I’m building and<br><em>learning now.</em></h2></div>
+          <div class="focus-items">
+            <article class="focus-card reveal"><span>01</span><div><h3>Placement Portal</h3><p>Production-oriented features, secure workflows, and backend refinement.</p></div><b>Building</b></article>
+            <article class="focus-card reveal"><span>02</span><div><h3>Learnix AI</h3><p>Improving assistant modes, educational utility, and interaction quality.</p></div><b>Iterating</b></article>
+            <article class="focus-card reveal"><span>03</span><div><h3>AWS & ML Deployment</h3><p>Cloud fundamentals and practical deployment patterns for ML applications.</p></div><b>Learning</b></article>
+            <article class="focus-card reveal"><span>04</span><div><h3>Engineering Interviews</h3><p>Data structures, algorithms, problem solving, and system fundamentals.</p></div><b>Preparing</b></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section academic-experience" id="academic-experience">
+      <div class="section-label reveal"><span>07</span> Technical experience</div>
+      <div class="experience-grid">
+        <div class="experience-intro reveal">
+          <h2 class="section-heading">Experience built<br><em>through practice.</em></h2>
+          <p>My experience comes from shipping academic systems, exploring cloud and AI at a hackathon, and continuously strengthening software engineering fundamentals.</p>
+        </div>
+        <div class="experience-cards reveal">
+          <article><span>01</span><h3>Product-Oriented Builds</h3><p>Five end-to-end applications spanning backend architecture, full-stack development, healthcare, IoT, and machine learning.</p><b>Shipping mindset</b></article>
+          <article><span>02</span><h3>Competitive Prototyping</h3><p>Hackathon work across AI, AWS cloud, healthcare, backend integration, and presentation under time pressure.</p><b>Fast execution</b></article>
+          <article><span>03</span><h3>Academic Depth</h3><p>Parallel academic work across B.Tech CSE-AI & ML and the IIT Madras BS in Data Science and Applications.</p><b>Strong foundation</b></article>
+          <article><span>04</span><h3>Documentation Readiness</h3><p>Projects are structured for clearer repositories, case studies, architecture notes, and public collaboration.</p><b>Professional polish</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section certifications-showcase" id="certifications">
+      <div class="certifications-layout">
+        
+        <!-- LEFT COLUMN -->
+        <div class="certifications-sidebar reveal">
+          <div class="section-label"><span>08</span> Verified Certifications & Credentials</div>
+          <h2 class="section-heading">Credentials backed by<br><em>verified achievements.</em></h2>
+          <p class="sidebar-description">A curated collection of academic credentials, industry-recognized certifications, hackathon achievements, and professional learning that demonstrate continuous growth in Software Engineering, Artificial Intelligence, Cloud Computing, and Data Science.</p>
+          
+          <div class="stats-grid-vertical">
+            <div class="stat-card reveal" style="transition-delay: 0.1s;">
+              <span class="stat-icon" aria-hidden="true">🎓</span>
+              <div><strong><span data-count="10" data-suffix="+">0</span></strong><p>Professional Certifications</p></div>
+            </div>
+            <div class="stat-card reveal" style="transition-delay: 0.2s;">
+              <span class="stat-icon" aria-hidden="true">🏆</span>
+              <div><strong><span data-count="2">0</span></strong><p>Academic Credentials</p></div>
+            </div>
+            <div class="stat-card reveal" style="transition-delay: 0.3s;">
+              <span class="stat-icon" aria-hidden="true">💻</span>
+              <div><strong><span data-count="3">0</span></strong><p>Learning Platforms<br><small>(IIT Madras, NPTEL, Infosys)</small></p></div>
+            </div>
+            <div class="stat-card reveal" style="transition-delay: 0.4s;">
+              <span class="stat-icon" aria-hidden="true">🚀</span>
+              <div><strong>Runner-up</strong><p>Hackathon Achievement</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="certifications-content reveal">
+          <div class="certifications-controls">
+            <div class="filter-chips">
+              <button class="filter-chip active" data-filter="all">All</button>
+              <button class="filter-chip" data-filter="academic">Academic</button>
+              <button class="filter-chip" data-filter="nptel">NPTEL</button>
+              <button class="filter-chip" data-filter="hackathon">Hackathon</button>
+              <button class="filter-chip" data-filter="professional">Professional</button>
+            </div>
+            <div class="search-wrapper">
+              <input type="search" id="cert-search" class="cert-search" placeholder="Search certifications..." aria-label="Search certifications">
+              <span class="search-icon" aria-hidden="true">⚲</span>
+            </div>
+          </div>
+
+          <div id="certification-cards-container" class="certification-grid">
+            <!-- Cards will be dynamically injected here by script.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="github-section" id="github" aria-labelledby="github-title">
+      <div class="github-inner reveal">
+        <div class="github-heading">
+        <div class="section-label"><span>09</span> GitHub</div>
+          <h2 id="github-title">Explore the code<br><em>behind my work.</em></h2>
+          <p>Live repository data, engineering activity, and the technologies behind my public work.</p>
+        </div>
+        <div class="github-dashboard" data-github-root aria-live="polite" aria-busy="true">
+          <div class="github-status"><span class="status-dot"></span><span data-github-status>Loading live GitHub data…</span></div>
+          <div class="github-metrics" data-github-metrics aria-label="GitHub profile statistics">
+            <div class="github-skeleton"></div><div class="github-skeleton"></div><div class="github-skeleton"></div>
+            <div class="github-skeleton"></div><div class="github-skeleton"></div><div class="github-skeleton"></div>
+          </div>
+          <div class="github-panel" data-featured-panel hidden><div class="github-panel-title"><h3>Featured projects</h3><span>Selected automatically</span></div><div class="featured-repos" data-featured-repos></div></div>
+          <div class="github-panel" data-repos-panel hidden><div class="github-panel-title"><h3>Latest repositories</h3><span>Recently updated</span></div><div class="latest-repos" data-latest-repos></div></div>
+          <div class="github-panel" data-contributions-panel hidden>
+            <div class="github-panel-title"><h3>Contribution graph</h3><span data-contribution-total></span></div>
+            <div class="contribution-scroll"><div class="contribution-map" data-contribution-map role="img" aria-label="GitHub contribution calendar"></div></div>
+            <div class="contribution-legend" aria-hidden="true"><span>Less</span><i></i><i></i><i></i><i></i><i></i><span>More</span></div>
+          </div>
+          <div class="github-lower-grid">
+            <div class="github-panel" data-languages-panel hidden><div class="github-panel-title"><h3>Languages</h3><span>GitHub Linguist</span></div><div class="language-chart" data-language-chart></div></div>
+            <div class="github-panel" data-activity-panel hidden><div class="github-panel-title"><h3>Recent activity</h3><span>Latest 5</span></div><ol class="activity-feed" data-activity-feed></ol></div>
+          </div>
+          <div class="repo-topics" data-repo-topics aria-label="Repository topics"></div>
+          <div class="github-error" data-github-error role="alert" hidden></div>
+          <button class="github-retry" data-github-retry type="button" hidden>Retry loading data</button>
+          <a href="https://github.com/DevanshBurman" target="_blank" rel="noopener noreferrer" class="button button-primary github-button" aria-label="View Devansh Burman's GitHub profile in a new tab">View GitHub Profile <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-inner reveal">
+        <div class="section-label"><span>10</span> Get in touch <a href="#" data-social="linkedin" class="inline-social" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></div>
+        <h2>Let's build something<br><em>meaningful.</em></h2>
+        <p>I'm open to Software Engineering, AI/ML, backend, and full-stack internship opportunities. Connect with me to discuss projects, technical roles, or collaboration.</p>
+        <div class="contact-availability" aria-label="Availability summary">
+          <span>Available for internships</span>
+          <span>Backend / AI / Full-stack</span>
+          <span>India / Remote-ready</span>
+        </div>
+        <div class="contact-links">
+          <div class="email-contact"><span>Email</span><span>devansh.burman16@gmail.com</span><button type="button" class="copy-email" data-email="devansh.burman16@gmail.com">Copy</button></div>
+          <a href="#" data-social="linkedin" class="contact-social-link"><span><svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</span>Let's connect professionally ↗</a>
+          <a href="#" data-social="github"><span>GitHub</span>github.com/DevanshBurman ↗</a>
+          <a href="tel:6264005916"><span>Phone</span>6264005916 ↗</a>
+          <div><span>Location</span>India</div>
+          <button type="button" class="resume-preview-button"><span>Résumé</span>Preview résumé ↗</button>
+        </div>
+      </div>
+      <footer>
+        <span>© 2026 Devansh Burman</span>
+        <span>Designed & built with care.</span>
+        <div class="footer-socials">
+          <a href="#" data-social="linkedin" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" data-social="github" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+        </div>
+        <a href="#home">Back to top ↑</a>
+      </footer>
+    </section>
+  </main>
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <dialog class="resume-modal" aria-labelledby="resume-title">
+    <div class="resume-modal-header">
+      <div><span>Résumé preview</span><h2 id="resume-title">Devansh Burman</h2></div>
+      <button type="button" class="modal-close" aria-label="Close résumé preview">×</button>
+    </div>
+    <div class="resume-sheet">
+      <section><h3>Profile</h3><p>Software Engineer specializing in AI & Machine Learning, backend development, full-stack systems, and cloud computing.</p></section>
+      <section><h3>Education</h3><p><strong>B.Tech CSE — AI & ML</strong><br>Acropolis Institute of Technology and Research · CGPA 8.14</p><p><strong>BS in Data Science and Applications</strong><br>IIT Madras · Ongoing</p></section>
+      <section><h3>Technical skills</h3><p>Python, Java, C++, JavaScript, SQL, Flask, Vue.js, SQLAlchemy, REST APIs, Scikit-learn, Pandas, NumPy, SQLite, MySQL, AWS, Git, GitHub.</p></section>
+      <section><h3>Selected projects</h3><p>Placement Portal · Learnix AI · Smart IoT Patient Monitoring · Diabetes Prediction · Hospital Management System</p></section>
+    </div>
+    <div class="resume-modal-actions"><a href="#" data-social="linkedin" class="resume-linkedin-button">View LinkedIn Profile ↗</a><a href="https://cdn.imageurlgenerator.com/uploads/c033f1c5-83b8-49d8-a202-3fcfc9a3c8b8.pdf" target="_blank" rel="noopener noreferrer" class="button button-primary">Download PDF</a><button type="button" class="modal-close secondary">Close preview</button></div>
+  </dialog>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Devansh Burman",
+    "jobTitle": "Software Engineer",
+    "address": {"@type": "PostalAddress", "addressLocality": "Indore", "addressCountry": "IN"},
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Acropolis Institute of Technology and Research"},
+      {"@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Madras"}
+    ],
+    "knowsAbout": ["Software Engineering", "Artificial Intelligence", "Machine Learning", "Backend Development", "Cloud Computing"]
+  }
+  </script>
+  <script src="services/github.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
