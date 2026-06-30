@@ -317,7 +317,7 @@ const certificationsData = [
     status: 'Verified',
     description: 'Successfully completed the Foundation Level of the IIT Madras BS Degree in Data Science and Applications covering Computational Thinking, Mathematics, Statistics, Python Programming, English, and foundational data science concepts.',
     badge: 'Verified Academic Credential',
-    credentialLink: 'https://storage.googleapis.com/online-degree-app-production-documents/CERTIFICATE/FOUNDATION_CERTIFICATE/F1_2025/99d95d61cc32fdeb9218abef187267b775365496554eaf169b4f90c373f98564.pdf?Expires=1782839487&GoogleAccessId=production-document-storage-si%40online-degree-app.iam.gserviceaccount.com&Signature=HRUnAmFWi0wxberh%2FANhAuUvgglMe1%2BBEePLA09ksbcICZBEWFDwuLIBkJi1HNX7Aj0KAswpbs%2FDoZLUi%2FGynhgHM6iL3PBm0wcbFSRD9H2nxXhbtrM9u1HIWrF8cCMdGVuhxnpYBcoZlqUrP906H9P9PekMGPCcoKXYdnMvOu9TJ7f0bnZU8yRCjWzsK0kUwLHx2sFKMd0ph%2Ff5FhegfOk5saonqnw66ViP21JLGS0pFYHBkp9YqlRDzOG0seyX%2BOdOjsbnIBi1fL%2FeZZXSj%2F%2BMHCYqRK9KiMoGkTXPELzrz%2FosCq6nMwGsyV%2FeWI%2BWQ8QTJZ5K%2FHNNkrAFKpwvpg%3D%3D',
+    credentialLink: 'https://cdn.imageurlgenerator.com/uploads/dd66ebc3-790d-4442-9d18-c2d56351b59e.pdf',
     issueDate: '30th April 2025',
     credentialId: '24F2006090'
   },
@@ -331,7 +331,7 @@ const certificationsData = [
     status: 'Verified',
     description: 'Successfully completed the Advanced Certificate in Programming and Application Development with coursework in Software Engineering, Database Systems, Web Technologies, Application Development, and Programming.',
     badge: 'Advanced Credential',
-    credentialLink: 'https://storage.googleapis.com/online-degree-app-production-documents/CERTIFICATE/ADVANCED_CERTIFICATE/F1_2026/0671c797871d75ded359d012b5d5cf5f89b729625f4032910be411e58a2f57b1.pdf?Expires=1782839382&GoogleAccessId=production-document-storage-si%40online-degree-app.iam.gserviceaccount.com&Signature=YsnZGi3XH6KSaD7YSCY9TR%2FEu8PfcTOn3Yapkrqtb9sVSLUxz58nYkY%2BAqa65xgXr8FE6MQl8xCbEkBK8%2FvG4Ev2ydtlS6VTowlvM5AnRgdjpO4N0v03XwV04Rramz6e5CEfeECjInQ%2FWmSWZJtG6%2Bv4Ed92kb13MKcSENpXQG8jbaIH38QZ0EBeITeo%2BxWHtofe8LEn4fF%2B66GmhuhTUS2ypuCtQuz9syjR92%2BlblJhAIpGXXc2WSTS0G8L4c2Lf3Z%2F96tX3y1GtKwIKu5YV5NLXGj3gdX%2B7O7WYx%2FGrQcmho%2Fd0wMUHkVoXd%2FUmqm7Se5I%2F5gJNpVfuCqslwCs9w%3D%3D',
+    credentialLink: 'https://cdn.imageurlgenerator.com/uploads/d996aef9-98c5-4206-ae28-8051d538a4de.pdf',
     issueDate: 'Upcoming',
     credentialId: ''
   },
